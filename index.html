@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenSpace | thiendi060</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="connectionModal" class="modal-overlay">
+        <div class="modal-content card-glass">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3>Social Connect</h3>
+            <p>Kết nối với thiendi060 qua các nền tảng</p>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/thiendi060" target="_blank" class="social-item fb">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://discord.com/users/1193190641811849268" target="_blank" class="social-item dc">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="https://tiktok.com/@thiendi060" target="_blank" class="social-item tt">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://github.com/thiendi060" target="_blank" class="social-item gh">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="zen-blur top-right"></div>
+    <div class="zen-blur bottom-left"></div>
+
+    <nav class="navbar">
+        <a href="#" class="logo-link">
+            <div class="logo">Zen<span>Space</span></div>
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMobileMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+            <li><a href="#about" onclick="closeMobileMenu()">Về mình</a></li>
+            <li><a href="#projects" onclick="closeMobileMenu()">Dự án</a></li>
+            <li><a href="#skills" onclick="closeMobileMenu()">Kỹ năng</a></li>
+            <li><a href="#education" onclick="closeMobileMenu()">Học vấn</a></li>
+            <li><a href="javascript:void(0)" class="nav-btn" onclick="openModal(); closeMobileMenu()">Kết nối</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Xin chào, mình là <span class="text-gradient">thiendi060</span></h1>
+            <p>Nơi lưu trữ những ý tưởng sáng tạo và hành trình phát triển bản thân qua từng dòng code.</p>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-primary">Tìm hiểu thêm</a>
+                <a href="#skills" class="btn btn-outline">Kỹ năng</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="about-wrapper card-glass">
+            <h2 class="section-title">Về ZenSpace</h2>
+            <p class="about-text">
+                Chào mừng bạn đến với <strong>ZenSpace</strong> — một góc nhỏ tĩnh lặng được tạo ra bởi <strong>thiendi060</strong>. 
+                Giữa dòng chảy không ngừng của công nghệ, mình chọn cho mình một lối đi riêng: nơi sự tối giản (Minimalism) gặp gỡ những dòng mã thuần khiết.
+                <br><br>
+                Đối với mình, mỗi dự án không chỉ là những dòng lệnh khô khan, mà là một tác phẩm nghệ thuật cần sự tỉ mỉ và tâm hồn. 
+                ZenSpace là nơi mình chia sẻ hành trình khám phá các giải pháp số, từ việc tối ưu hóa giao diện người dùng đến việc xây dựng những giá trị bền vững.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title">Năng lực cốt lõi</h2>
+        <div class="skills-grid">
+            <div class="skill-card card-glass">
+                <div class="icon">🌿</div>
+                <h3>Minimalist Design</h3>
+                <p>Ưu tiên sự tinh gọn và trải nghiệm người dùng tối ưu.</p>
+            </div>
+            <div class="skill-card card-glass">
+                <div class="icon">⚡</div>
+                <h3>Clean Code</h3>
+                <p>Xây dựng hệ thống ổn định với cấu trúc mã nguồn sạch sẽ.</p>
+            </div>
+            <div class="skill-card card-glass">
+                <div class="icon">✨</div>
+                <h3>Creative Mind</h3>
+                <p>Luôn tìm kiếm những giải pháp mới mẻ cho các vấn đề cũ.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="section-title">Dự án tiêu biểu</h2>
+      <div class="projects-grid">
+          <div class="project-card card-glass">
+              <div class="project-tags"><span>Discord Bot</span><span>Node.js</span></div>
+              <h3>Lofi Music Bot</h3>
+              <p>Bot chuyên dụng phát nhạc Lofi 24/7 cho các server Discord với chất lượng âm thanh cao và giao diện điều khiển tối giản.</p>
+              <a href="#" class="project-link">Xem chi tiết <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+  
+          <div class="project-card card-glass">
+              <div class="project-tags"><span>Minecraft</span><span>Management</span></div>
+              <h3>SMP Manager</h3>
+              <p>Công cụ hỗ trợ quản lý nền kinh tế (Economy) và hệ thống Rank cho các máy chủ Minecraft Vanilla/Eco SMP.</p>
+              <a href="#" class="project-link">Xem chi tiết <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+      </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2 class="section-title">Hành trình học vấn</h2>
+        <div class="education-timeline">
+            <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-content card-glass">
+                    <span class="edu-tag">Quá khứ</span>
+                    <h3>Trường Tiểu học</h3>
+                    <p>Những bước chân đầu tiên trong hành trình tìm kiếm tri thức và hình thành tư duy cơ bản.</p>
+                </div>
+            </div>
+  
+            <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-content card-glass">
+                    <span class="edu-tag">Quá khứ</span>
+                    <h3>Trường Trung học cơ sở</h3>
+                    <p>Giai đoạn khám phá những niềm đam mê đầu tiên và xây dựng nền tảng học thuật vững chắc.</p>
+                </div>
+            </div>
+  
+            <div class="edu-item">
+                <div class="edu-dot"></div>
+                <div class="edu-content card-glass">
+                    <span class="edu-tag">Quá khứ</span>
+                    <h3>Trường Trung học phổ thông</h3>
+                    <p>Xác định hướng đi cá nhân, bắt đầu tiếp cận với lập trình và các tư duy logic chuyên sâu.</p>
+                </div>
+            </div>
+  
+            <div class="edu-item active">
+                <div class="edu-dot"></div>
+                <div class="edu-content card-glass">
+                    <span class="edu-tag">Hiện tại</span>
+                    <h3>Đại học</h3>
+                    <p>Đang trong quá trình nghiên cứu chuyên sâu, phát triển các dự án thực tế và hoàn thiện kỹ năng chuyên môn.</p>
+                </div>
+            </div>
+  
+            <div class="edu-item future">
+                <div class="edu-dot"></div>
+                <div class="edu-content card-glass">
+                    <span class="edu-tag">Tương lai</span>
+                    <h3>Cao học (Thạc sĩ/Tiến sĩ)</h3>
+                    <p>Mục tiêu tiếp tục chinh phục những tầm cao mới trong tri thức, đóng góp các giá trị học thuật và giải pháp công nghệ tiên tiến.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-container container">
+        <h2 class="section-title">Chỉ số năng lực</h2>
+        <div class="stats-grid">
+            <div class="stat-item card-glass">
+                <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Năm kinh nghiệm</span>
+            </div>
+
+            <div class="stat-item card-glass">
+                <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Dự án hoàn thành</span>
+            </div>
+
+            <div class="stat-item card-glass">
+                <div class="stat-icon"><i class="fa-solid fa-server"></i></div>
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Vận hành hệ thống</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow" class="container">
+        <h2 class="section-title">Quy trình sáng tạo</h2>
+        <div class="workflow-grid">
+            <div class="workflow-card card-glass">
+                <div class="step-num">01</div>
+                <h3>Lên ý tưởng</h3>
+                <p>Nghiên cứu nhu cầu và xác định phong cách tối giản phù hợp cho dự án.</p>
+            </div>
+            <div class="workflow-card card-glass">
+                <div class="step-num">02</div>
+                <h3>Phát triển</h3>
+                <p>Xây dựng mã nguồn sạch (Clean Code), tối ưu hóa hiệu suất trên môi trường Docker/VPS.</p>
+            </div>
+            <div class="workflow-card card-glass">
+                <div class="step-num">03</div>
+                <h3>Triển khai</h3>
+                <p>Kiểm thử kỹ lưỡng và đưa sản phẩm vào vận hành thực tế trên nền tảng đám mây.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Dự án nổi bật</h2>
+        <div class="projects-grid">
+            <div class="project-card card-glass">
+                <div class="project-status">Duy trì</div>
+                <h3>Lofi Discord Ecosystem</h3>
+                <p>Hệ thống bot chuyên dụng tập trung vào trải nghiệm âm thanh Lofi, tích hợp quản lý server cho cộng đồng.</p>
+                <div class="tech-stack">
+                    <span>Node.js</span>
+                    <span>Ollama</span>
+                    <span>Docker</span>
+                </div>
+                <a href="#" class="project-link">Chi tiết dự án <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="project-card card-glass">
+                <div class="project-status">Hoàn thành</div>
+                <h3>AI Portrait Engineering</h3>
+                <p>Tối ưu hóa tham số cho các mô hình Gemma 3 và MetaAI để tạo ra hình ảnh chất lượng cao.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>LLMs</span>
+                    <span>Prompt Eng.</span>
+                </div>
+                <a href="#" class="project-link">Chi tiết dự án <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter container">
+      <div class="newsletter-card card-glass">
+          <h3>Đăng ký nhận bản tin</h3>
+          <p>Nhận những cập nhật mới nhất về các dự án và bài viết của ZenSpace.</p>
+          <form class="newsletter-form">
+              <input type="email" placeholder="Địa chỉ email của bạn..." required>
+              <button type="submit" class="nav-btn">Đăng ký</button>
+          </form>
+      </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ZenSpace - Crafted by <strong>thiendi060</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Các hàm phụ trợ cho Modal (nếu không để trong script.js)
+        function openModal() { document.getElementById("connectionModal").classList.add("active"); }
+        function closeModal() { document.getElementById("connectionModal").classList.remove("active"); }
+        window.onclick = function(event) {
+            let modal = document.getElementById("connectionModal");
+            if (event.target == modal) closeModal();
+        }
+    </script>
+</body>
+</html>
